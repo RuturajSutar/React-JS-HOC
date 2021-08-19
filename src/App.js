@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import HOC_One from "./Components/HOC_One";
+import HOC_Two from "./Components/HOC_Two";
+import MyComponent from "./Components/MyComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HOC_One cmp = {MyComponent}></HOC_One>
+      <br/>
+      <br/>
+      <HOC_Two cmp = {MyComponent}></HOC_Two>
     </div>
   );
 }
